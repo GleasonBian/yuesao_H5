@@ -1,0 +1,31 @@
+body {
+  background-image: linear-gradient(to bottom, #fff, #ffc6eb); }
+
+.head {
+  width: 100%;
+  height: 3.72rem; }
+
+.base {
+  width: 100%; }
+  .base .status {
+    width: 100%;
+    height: 0.9rem;
+    background-color: #fff;
+    line-height: 0.9rem;
+    font-size: 0.26rem;
+    text-indent: 1em;
+    margin-top: 0.36rem; }
+  .base button {
+    width: 90%;
+    height: 0.9rem;
+    background-color: #fff;
+    border-radius: 0.2rem;
+    margin-left: 0.34rem;
+    border: 1px #fff solid;
+    font-size: 0.28rem; }
+  .base .Ready {
+    margin-top: 0.7rem; }
+  .base .pregnancy, .base .Parentingperiod {
+    margin-top: 0.4rem; }
+
+/*# sourceMappingURL=state.css.map */

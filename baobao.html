@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"/>
+    <title></title>
+    <link rel="stylesheet" href="./css/base.css"/>
+    <link rel="stylesheet" href="./css/baobao.css"/>
+</head>
+<body>
+<div class="warp">
+    <div class="box_top">
+        <header>宝宝准确消息
+            <a href="#" class="back"></a>
+        </header>
+        <div class="birth">
+            请选择宝宝出生日期:
+            <input type="date" id="id_yy_input" class="date"/>
+
+        </div>
+        <div class="sex clearfix">
+            <input name="status" id="status" type="hidden" value="2">
+
+            <div class="nan fl">
+                <span class="man"></span>
+                <!--<img src="./images/denglu/icon_man.png" alt=""/>-->
+                <!--<p class="sex_n">男孩</p>-->
+            </div>
+            <div class="nv fr">
+                <span class="women"></span>
+                <!--<p class="sex_n">女孩</p>-->
+            </div>
+        </div>
+        <div class="next">
+            <button onclick="window.location.href = 'server.html'">下一步</button>
+        </div>
+    </div>
+
+<!--定制服务-->
+    <div class="box_bottom">
+        <header>
+            定制服务
+        </header>
+        <div class="main">
+            <div class="call">
+                希望我们如何称呼您?
+            </div>
+            <div class="nickname">
+                <input type="text" placeholder="请输入您的昵称" />
+            </div>
+            <div class="next">
+                <button onclick="window.location.href = '首页'">下一步</button>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<script src="./js/base.js"></script>
+<script src="./js/jquery-1.12.4.js"></script>
+<script src="./js/baobao.js"></script>
+</html>

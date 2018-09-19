@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"/>
+    <title></title>
+    <link rel="stylesheet" href="./css/base.css"/>
+    <link rel="stylesheet" href="./css/weight.css"/>
+
+    <link rel="stylesheet" href="./js/date/css/normalize3.0.2.min.css" />
+    <!--<link rel="stylesheet" href="./js/date/css/style.css?v=7" />-->
+    <link href="./js/date/css/mobiscroll.css" rel="stylesheet" />
+    <link href="./js/date/css/mobiscroll_date.css" rel="stylesheet" />
+</head>
+<body>
+<div class="warp">
+    <header class="clearfix">
+        <a href="#" class="back fl"></a>
+        体重腹围
+        <a href="#" class="save fr">保存</a>
+    </header>
+    <div class="main">
+        <div class="record_box">
+            <ul>
+                <li>
+                    <span class="fl">记录</span>
+                    <span class="fr">体重腹围</span>
+
+                </li>
+                <li>
+                    <span class="fl">时间</span>
+                    <input id="chanjain-data" type="text" class="fr" placeholder="请选择时间"/>
+
+
+                </li>
+                <li>
+                    <span class="fl">体重</span>
+                    <input type="text" placeholder="请填写您的体重" class="yappin fr"/>
+                </li>
+
+                <li>
+                    <span class="fl">腹围</span>
+                    <input type="text" placeholder="请填写您的腹围" class="yappin fr"/>
+                </li>
+
+            </ul>
+            <div class="describe">
+                <textarea name="" id="" cols="30" rows="10" placeholder="描述情况"></textarea>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<script src="./js/base.js"></script>
+<script src="./js/jquery-1.12.4.js"></script>
+<script src="./js/date/js/mobiscroll_date.js" charset="gb2312"></script>
+<script src="./js/date/js/mobiscroll.js"></script>
+<script type="text/javascript">
+    $(function () {
+        var currYear = (new Date()).getFullYear();
+        var opt={};
+        opt.date = {preset : 'date'};
+        opt.datetime = {preset : 'datetime'};
+        opt.time = {preset : 'time'};
+        opt.default = {
+            theme: 'android-ics light', //皮肤样式
+            display: 'modal', //显示方式
+            mode: 'scroller', //日期选择模式
+            dateFormat: 'yyyy-mm-dd',
+            lang: 'zh',
+            showNow: true,
+            nowText: "今天",
+            startYear: currYear - 50, //开始年份
+            endYear: currYear + 10 //结束年份
+        };
+
+        $("#chanjain-data").mobiscroll($.extend(opt['date'], opt['default']));
+
+    });
+</script>
+</html>

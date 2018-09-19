@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"/>
+    <title></title>
+    <link rel="stylesheet" href="./css/base.css"/>
+    <link rel="stylesheet" href="./css/nutrient.css"/>
+</head>
+<body>
+<div class="warp">
+    <header class="clearfix">
+        <a href="#" class="back fl"></a>
+        药品营养剂
+        <a href="#" class="save fr">保存</a>
+    </header>
+    <div class="main">
+        <div class="record_box">
+            <ul>
+                <li>
+                    <span class="fl">记录</span>
+                    <span class="fr">药品营养剂</span>
+
+                </li>
+                <li>
+                    <span class="fl">记录</span>
+                    <input type="date" class="fr"/>
+
+                </li>
+                <li>
+                    <span class="fl">记录</span>
+                    <input type="text" placeholder="请填写您的药品" class="yappin fr"/>
+                </li>
+
+            </ul>
+            <div class="describe">
+                <textarea name="" id="" cols="30" rows="10" placeholder="描述情况"></textarea>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<script src="./js/base.js"></script>
+<script src="./js/jquery-1.12.4.js"></script>
+</html>
